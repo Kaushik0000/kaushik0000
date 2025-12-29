@@ -55,25 +55,34 @@
             display: none;
             justify-content: center;
             align-items: center;
-            height: 100%;
+            min-height: 100vh;
             text-align: center;
             padding: 20px;
             flex-direction: column;
         }
 
+
         .card {
-            background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+            background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
                 url('image1.jpeg');
+
             background-size: cover;
             background-position: center;
-            padding: 30px;
-            border-radius: 25px;
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+
+            padding: 40px 30px;
+            border-radius: 30px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+
+            max-width: 600px;
+            /* BIGGER */
+            width: 90%;
+            /* fits phones */
+
             animation: float 4s ease-in-out infinite;
-            max-width: 500px;
             position: relative;
             z-index: 10;
         }
+
 
         h1 {
             font-size: 2.5rem;
